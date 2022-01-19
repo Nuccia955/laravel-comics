@@ -38,3 +38,24 @@ header .container .main-nav ul li a {
   color: #4f4a47;
   text-decoration: none;
 }
+
+/* MAIN */
+main {
+  background-color: #1c1c1c;
+  padding: 4rem 0;
+}
+main ul.card-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+main ul.card-list li.card {
+  width: calc(16.6666666667% - 30px);
+  margin: 15px;
+}
+main ul.card-list li.card h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+}

@@ -1,0 +1,20 @@
+/* MAIN */
+main {
+    background-color: $bg-primary;
+    padding: 4rem 0;
+    ul.card-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li.card {
+            width: calc(100% / 6 - 30px);
+            margin: 15px;
+            h4 {
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+    }
+}
