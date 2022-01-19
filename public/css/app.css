@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
 /* UTILITIES */
@@ -18,6 +19,11 @@ body {
 
 /* HEADER */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
   font-family: "Roboto Condensed", sans-serif;
 }
 header .container {
@@ -62,6 +68,7 @@ header .container .main-nav ul li a:hover {
 
 /* MAIN */
 main {
+  margin-top: 112px;
   background-color: #1c1c1c;
   padding: 5rem 0 0;
 }
