@@ -1,0 +1,40 @@
+/* VARIABLES */
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* UTILITIES */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 1.1rem;
+}
+header .container .logo img {
+  display: inline-block;
+  margin-right: 4rem;
+}
+header .container .main-nav ul {
+  display: flex;
+  list-style: none;
+}
+header .container .main-nav ul li {
+  margin-right: 2.5rem;
+}
+header .container .main-nav ul li a {
+  text-transform: uppercase;
+  color: #4f4a47;
+  text-decoration: none;
+}

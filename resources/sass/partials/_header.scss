@@ -1,0 +1,27 @@
+/* HEADER */
+header {
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 1.1rem;
+        .logo img {
+            display: inline-block;
+            margin-right: 4rem;
+        }
+        .main-nav {
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin-right: 2.5rem;
+                    a {
+                        text-transform: uppercase;
+                        color: $text-col;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
