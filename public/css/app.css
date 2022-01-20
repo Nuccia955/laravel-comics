@@ -109,11 +109,11 @@ main ul.card-list li.card a .text h4 {
   font-size: 0.9rem;
   color: #fff;
 }
-main div {
+main div.wrap-button {
   text-align: center;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
-main div .button {
+main div.wrap-button .button {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
@@ -124,7 +124,7 @@ main div .button {
   padding: 0.8rem 4rem;
   background-color: #0182f9;
 }
-main div .button:hover {
+main div.wrap-button .button:hover {
   background-color: #0168c9;
   transform: scale(1.1);
   transition: transform 0.1s ease-in-out;
@@ -249,6 +249,7 @@ main .comic-detail .comic .container .text .wrapper {
   align-items: center;
   background-color: #55bb58;
   border-bottom: 1px solid #49a14d;
+  margin-bottom: 1rem;
   color: #fff;
 }
 main .comic-detail .comic .container .text .wrapper .details {
@@ -286,6 +287,13 @@ main .comic-detail .comic .container .adv span {
   font-weight: 600;
   margin-bottom: 0.4rem;
 }
+main .comic-detail .comic .container .adv a {
+  text-decoration: none;
+}
 main .comic-detail .comic .container .adv img {
   max-width: 100%;
+}
+main .comic-detail .comic .container .adv img:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s linear;
 }

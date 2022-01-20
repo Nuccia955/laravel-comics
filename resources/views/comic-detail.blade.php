@@ -37,7 +37,9 @@
 
                 <div class="adv">
                     <span>ADVERTISEMENT</span>
-                    <img src="{{ asset('images/adv.jpg') }}" alt="">
+                    <a href="">
+                        <img src="{{ asset('images/adv.jpg') }}" alt="adv superman">
+                    </a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
             </li>
         @endforeach
     </ul>
-    <div>
+    <div class="wrap-button">
         <a href="" class="button">Load More</a>
     </div>
 @endsection

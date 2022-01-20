@@ -51,6 +51,7 @@ main {
                         align-items: center;
                         background-color: #55bb58;
                         border-bottom: 1px solid #49a14d;
+                        margin-bottom: 1rem;
                         color: #fff;
                         .details {
                             display: flex;
@@ -89,8 +90,15 @@ main {
                         font-weight: 600;
                         margin-bottom: 0.4rem;
                     }
+                    a {
+                        text-decoration: none;
+                    }
                     img {
                         max-width: 100%;
+                        &:hover {
+                            transform: scale(0.9);
+                            transition: transform 0.3s linear;
+                        }
                     };
                 }
             }
