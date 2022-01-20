@@ -1,5 +1,6 @@
 /* COMIC-DETAIL */
 main {
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 0;
     margin-bottom: 0;
     .comic-detail {
@@ -24,6 +25,73 @@ main {
                     display: inline-block;
                     position: absolute;
                     bottom: -60px;
+                }
+            }
+        }
+        .comic {
+            padding: 125px 0;
+            background-color: #fff;
+            .container {
+                max-width: 1024px;
+                margin: 0 auto;
+                display: flex;
+                .text {
+                    width: calc(73% - 40px);
+                    margin-right: 40px;
+                    margin-top: 1.3rem;
+                    .title {
+                        text-align: left;
+                        color: #11405e;
+                        text-transform: uppercase;
+                        font-size: 1.6rem;
+                        margin-bottom: 1.9rem;
+                    }
+                    .wrapper {
+                        display: flex;
+                        align-items: center;
+                        background-color: #55bb58;
+                        border-bottom: 1px solid #49a14d;
+                        color: #fff;
+                        .details {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 1rem 1.3rem;
+                            width: 75%;
+                            margin: 0;
+                            border-right: 1px solid #49a14d;
+                        }
+                        .menu-check {
+                            width: 25%;
+                            padding: 0 1.3rem;
+                            margin: 0;
+                            i {
+                                margin-left: 4px;
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                    .description {
+                        text-align: left;
+                        color: #606d7e;
+                        line-height: 1.5rem;
+                        font-size: 0.9rem;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+                
+                .adv {
+                    width: calc(27%);
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        text-align: right;
+                        color: #5e605f;
+                        font-weight: 600;
+                        margin-bottom: 0.4rem;
+                    }
+                    img {
+                        max-width: 100%;
+                    };
                 }
             }
         }

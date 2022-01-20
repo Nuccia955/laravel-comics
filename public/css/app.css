@@ -193,6 +193,7 @@ footer .container ul.useful-links li a img:hover {
 
 /* COMIC-DETAIL */
 main {
+  font-family: "Roboto Condensed", sans-serif;
   padding: 0;
   margin-bottom: 0;
 }
@@ -221,4 +222,70 @@ main .comic-detail .jumbotron .cover.container img {
   display: inline-block;
   position: absolute;
   bottom: -60px;
+}
+main .comic-detail .comic {
+  padding: 125px 0;
+  background-color: #fff;
+}
+main .comic-detail .comic .container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+main .comic-detail .comic .container .text {
+  width: calc(73% - 40px);
+  margin-right: 40px;
+  margin-top: 1.3rem;
+}
+main .comic-detail .comic .container .text .title {
+  text-align: left;
+  color: #11405e;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 1.9rem;
+}
+main .comic-detail .comic .container .text .wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #55bb58;
+  border-bottom: 1px solid #49a14d;
+  color: #fff;
+}
+main .comic-detail .comic .container .text .wrapper .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.3rem;
+  width: 75%;
+  margin: 0;
+  border-right: 1px solid #49a14d;
+}
+main .comic-detail .comic .container .text .wrapper .menu-check {
+  width: 25%;
+  padding: 0 1.3rem;
+  margin: 0;
+}
+main .comic-detail .comic .container .text .wrapper .menu-check i {
+  margin-left: 4px;
+  font-size: 0.8rem;
+}
+main .comic-detail .comic .container .text .description {
+  text-align: left;
+  color: #606d7e;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+}
+main .comic-detail .comic .container .adv {
+  width: 27%;
+}
+main .comic-detail .comic .container .adv span {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  color: #5e605f;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+main .comic-detail .comic .container .adv img {
+  max-width: 100%;
 }
