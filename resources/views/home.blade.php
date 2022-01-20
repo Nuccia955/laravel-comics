@@ -2,16 +2,18 @@
 
 @section('main-content')
     <ul class="card-list container">
-        @foreach ($comics as $comic)
+        @foreach ($comics as $index => $comic)
             <li class="card">
-                <div class="cover">
-                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                </div>
-                <div class="text">
-                    <h4>
-                        {{ $comic['series'] }}
-                    </h4>
-                </div>
+                <a href="{{route('comic-detail', ['id' => $index])}}">
+                    <div class="cover">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    </div>
+                    <div class="text">
+                        <h4>
+                            {{ $comic['series'] }}
+                        </h4>
+                    </div>
+                </a>
             </li>
         @endforeach
     </ul>

@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  cursor: pointer;
+  cursor: default;
 }
 
 /* UTILITIES */
@@ -22,6 +22,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   background-color: #fff;
   width: 100%;
   font-family: "Roboto Condensed", sans-serif;
@@ -65,19 +66,16 @@ header .container .main-nav ul li a:hover {
   color: #0182f9;
   border-bottom-color: currentColor;
 }
+header .container .main-nav ul li a.active {
+  color: #0182f9;
+  border-bottom-color: currentColor;
+}
 
 /* MAIN */
 main {
   margin-top: 112px;
   background-color: #1c1c1c;
   padding: 5rem 0 0;
-}
-main::after {
-  content: "";
-  display: block;
-  max-width: 100%;
-  height: 1rem;
-  background-color: #0182f9;
 }
 main ul.card-list {
   margin-bottom: 50px;
@@ -90,7 +88,10 @@ main ul.card-list li.card {
   width: calc(16.6666666667% - 28px);
   margin: 1.5rem 14px;
 }
-main ul.card-list li.card .cover img {
+main ul.card-list li.card a {
+  text-decoration: none;
+}
+main ul.card-list li.card a .cover img {
   width: 180px;
   height: 180px;
   -o-object-fit: cover;
@@ -98,10 +99,10 @@ main ul.card-list li.card .cover img {
   -o-object-position: top;
      object-position: top;
 }
-main ul.card-list li.card .text {
+main ul.card-list li.card a .text {
   margin-top: 1rem;
 }
-main ul.card-list li.card .text h4 {
+main ul.card-list li.card a .text h4 {
   text-align: left;
   text-transform: uppercase;
   font-weight: 400;
@@ -132,6 +133,13 @@ main div .button:hover {
 /* FOOTER */
 footer {
   background-color: #303030;
+}
+footer::before {
+  content: "";
+  display: block;
+  max-width: 100%;
+  height: 1rem;
+  background-color: #0182f9;
 }
 footer .container {
   display: flex;
@@ -181,4 +189,36 @@ footer .container ul.useful-links li a {
 footer .container ul.useful-links li a img:hover {
   transform: scale(1.2);
   transition: transform 0.1s ease-in-out;
+}
+
+/* COMIC-DETAIL */
+main {
+  padding: 0;
+  margin-bottom: 0;
+}
+main .comic-detail {
+  color: #fff;
+}
+main .comic-detail .jumbotron {
+  height: 480px;
+  border-bottom: 80px solid #0182f9;
+  margin: 0;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+main .comic-detail .jumbotron .cover.container {
+  height: 100%;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto 0;
+  display: flex;
+  align-items: end;
+}
+main .comic-detail .jumbotron .cover.container img {
+  max-width: 190px;
+  border: 1px solid #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: -60px;
 }

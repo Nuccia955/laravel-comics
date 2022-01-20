@@ -3,6 +3,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     background-color: #fff;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
@@ -39,6 +40,10 @@ header {
                         border-bottom: 3px solid transparent;
                         line-height: calc(80px + 32px);
                         &:hover {
+                            color: $theme-col;
+                            border-bottom-color: currentColor;
+                        }
+                        &.active {
                             color: $theme-col;
                             border-bottom-color: currentColor;
                         }

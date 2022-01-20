@@ -8,7 +8,11 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="">Comics</a>
+                    <a href="/"
+                        @if(Request::route()->getName() === 'home' || Request::route()->getName() === 'comic-detail') 
+                            class="active"
+                        @endif
+                    >Comics</a>
                 </li>
                 <li>
                     <a href="">News</a>
